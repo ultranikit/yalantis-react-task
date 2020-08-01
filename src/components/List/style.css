@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+}
+.month-item {
+  position: relative;
+  padding: 20px 30px;
+  margin: 10px auto;
+  max-width: 300px;
+  text-align-last: left;
+  font-size: 24px;
+  border-radius: 8px;
+  color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.month-item-title {
+  font-size: 22px;
+}
+
+.users-list {
+  position: absolute;
+  padding: 20px;
+  width: 70%;
+  font-size: 16px;
+  color: #000;
+  background: #efefef;
+  border-radius: 8px;
+  top: 0;
+  right: -85%;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.users-list-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.users-list-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  border-bottom: 1px solid #000;
+}
+
+.users-list-data {
+  display: inline-block;
+  padding: 5px 0 5px 0;
+}
+
+.month-item:hover .users-list {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+}
+
+/* colors for month list */
+.grey {
+  background: grey;
+}
+
+.blue {
+  background: rgb(26, 115, 232);
+}
+
+.green {
+  background: #188038;
+}
+
+.red {
+  background: #c00;
+}
